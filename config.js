@@ -1,3 +1,3 @@
-const baseUrl = 'https://cesarv-mp-commerce-nodejs.herokuapp.com/'
+const baseUrl = 'https://cesarv-mp-commerce-nodejs.herokuapp.com'
 
 module.exports = { baseUrl }

@@ -8,7 +8,7 @@ var app = express();
  
 app.engine('handlebars', exphbs());
 
-app.use(bodyParser.ur...lencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 
@@ -22,9 +22,6 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.get('/detail', function (req, res) {
-    res.render('detail', req.query);
-});...
 
 app.get('/detail', async function (req, res) {
     let id = await createPreference(req.query)
